@@ -1,0 +1,556 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2281DB78-FF03-44B5-8B8A-8CAAF3180610}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>WindowsApplication1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WindowsApplication1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WindowsApplication1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>WindowsApplication1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>WindowsApplication1.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add Employee.Designer.vb">
+      <DependentUpon>Add Employee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add Employee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alpha.Designer.vb">
+      <DependentUpon>alpha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="alpha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alphalist.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>alphalist.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="alphalist_generator.Designer.vb">
+      <DependentUpon>alphalist_generator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="alphalist_generator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="attendance_monitoring.Designer.vb">
+      <DependentUpon>attendance_monitoring.vb</DependentUpon>
+    </Compile>
+    <Compile Include="attendance_monitoring.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="attendance_overide.Designer.vb">
+      <DependentUpon>attendance_overide.vb</DependentUpon>
+    </Compile>
+    <Compile Include="attendance_overide.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="attendance_tracker.Designer.vb">
+      <DependentUpon>attendance_tracker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="attendance_tracker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="attReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>attReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="att_printer.Designer.vb">
+      <DependentUpon>att_printer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="att_printer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrystalReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="dept_add.Designer.vb">
+      <DependentUpon>dept_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dept_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Developers_page.Designer.vb">
+      <DependentUpon>Developers_page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Developers_page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E201_form.Designer.vb">
+      <DependentUpon>E201_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E201_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E201_list.Designer.vb">
+      <DependentUpon>E201_list.vb</DependentUpon>
+    </Compile>
+    <Compile Include="E201_list.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employeelist.Designer.vb">
+      <DependentUpon>employeelist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="employeelist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emp_list_reporting.Designer.vb">
+      <DependentUpon>emp_list_reporting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="emp_list_reporting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="full_payroll.Designer.vb">
+      <DependentUpon>full_payroll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="full_payroll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="full_report2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>full_report2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="job_position.Designer.vb">
+      <DependentUpon>job_position.vb</DependentUpon>
+    </Compile>
+    <Compile Include="job_position.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeaveFiler.Designer.vb">
+      <DependentUpon>LeaveFiler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveFiler.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoanForms.Designer.vb">
+      <DependentUpon>LoanForms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoanForms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainform.Designer.vb">
+      <DependentUpon>mainform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mainform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manual_Attendance.Designer.vb">
+      <DependentUpon>Manual_Attendance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manual_Attendance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Payroll_computation.Designer.vb">
+      <DependentUpon>Payroll_computation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Payroll_computation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="payroll_daterange.Designer.vb">
+      <DependentUpon>payroll_daterange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="payroll_daterange.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="payroll_report.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>payroll_report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Payslip.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Payslip.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="payslip_filter.Designer.vb">
+      <DependentUpon>payslip_filter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="payslip_filter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="payslip_printer.Designer.vb">
+      <DependentUpon>payslip_printer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="payslip_printer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="payslip_tracker.Designer.vb">
+      <DependentUpon>payslip_tracker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="payslip_tracker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_profile.Designer.vb">
+      <DependentUpon>update_profile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="update_profile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uploaded_Docs.Designer.vb">
+      <DependentUpon>uploaded_Docs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uploaded_Docs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="full_payroll.resx">
+      <DependentUpon>full_payroll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="full_report2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>full_report2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeaveFiler.resx">
+      <DependentUpon>LeaveFiler.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoanForms.resx">
+      <DependentUpon>LoanForms.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="payroll_report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>payroll_report.vb</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="uploaded_Docs.resx">
+      <DependentUpon>uploaded_Docs.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\FadingLineGraphic1.png" />
+    <None Include="Resources\45degreee_fabric_%402X.png" />
+    <None Include="Resources\Untitled-1.png" />
+    <None Include="Resources\FadingLineGraphic.png" />
+    <None Include="Resources\1-stackedpaper.jpg" />
+    <None Include="Resources\NCIP.png" />
+    <None Include="Resources\Untitled-1.jpg" />
+    <None Include="Resources\6.jpg" />
+    <None Include="Resources\3.jpg" />
+    <None Include="Resources\2.jpg" />
+    <None Include="Resources\1.jpg" />
+    <None Include="Resources\Penguins.jpg" />
+    <None Include="Resources\Lighthouse.jpg" />
+    <None Include="Resources\Jellyfish.jpg" />
+    <None Include="Resources\Koala.jpg" />
+    <None Include="Resources\Desert.jpg" />
+    <EmbeddedResource Include="alpha.resx">
+      <DependentUpon>alpha.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="alphalist.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>alphalist.vb</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="alphalist_generator.resx">
+      <DependentUpon>alphalist_generator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="attendance_tracker.resx">
+      <DependentUpon>attendance_tracker.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="attReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>attReport.vb</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="att_printer.resx">
+      <DependentUpon>att_printer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E201_form.resx">
+      <DependentUpon>E201_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E201_list.resx">
+      <DependentUpon>E201_list.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manual_Attendance.resx">
+      <DependentUpon>Manual_Attendance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payroll_computation.resx">
+      <DependentUpon>Payroll_computation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payroll_daterange.resx">
+      <DependentUpon>payroll_daterange.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="Payslip.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Payslip.vb</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="payslip_filter.resx">
+      <DependentUpon>payslip_filter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payslip_printer.resx">
+      <DependentUpon>payslip_printer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payslip_tracker.resx">
+      <DependentUpon>payslip_tracker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_profile.resx">
+      <DependentUpon>update_profile.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\logo.jpg" />
+    <None Include="Resources\default.png" />
+    <None Include="Resources\profile1.jpg" />
+    <None Include="Resources\accounting.jpg" />
+    <None Include="Resources\attendance.jpg" />
+    <None Include="Resources\profile.jpg" />
+    <None Include="Resources\general.jpg" />
+    <None Include="Resources\asd.jpg" />
+    <None Include="Resources\emp.jpg" />
+    <None Include="Resources\admin.jpg" />
+    <None Include="Resources\pass.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\login.png" />
+    <None Include="Resources\form.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\Blurred-Mountain-Sunrise-Wallpaper.jpg" />
+    <EmbeddedResource Include="Add Employee.resx">
+      <DependentUpon>Add Employee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="attendance_monitoring.resx">
+      <DependentUpon>attendance_monitoring.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="attendance_overide.resx">
+      <DependentUpon>attendance_overide.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dept_add.resx">
+      <DependentUpon>dept_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Developers_page.resx">
+      <DependentUpon>Developers_page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employeelist.resx">
+      <DependentUpon>employeelist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emp_list_reporting.resx">
+      <DependentUpon>emp_list_reporting.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="eReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>eReport.vb</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="job_position.resx">
+      <DependentUpon>job_position.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainform.resx">
+      <DependentUpon>mainform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="report.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\12233249_1044438062257406_1948497226_n.jpg" />
+    <None Include="Resources\blankpage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
