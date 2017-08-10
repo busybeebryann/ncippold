@@ -49,7 +49,7 @@ Partial Class uploaded_Docs
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.WhiteSmoke
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Location = New System.Drawing.Point(231, 171)
+        Me.PictureBox1.Location = New System.Drawing.Point(231, 170)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(339, 346)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
